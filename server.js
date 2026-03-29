@@ -29,6 +29,10 @@ app.post("/chat", async (req, res) => {
       contents: message
     });
 
+app.post("/chat", (req, res) => {
+  res.json({ reply: "Test OK" });
+});
+
     res.json({
       reply: response.text
     });
